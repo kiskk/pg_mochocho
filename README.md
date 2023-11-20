@@ -6,10 +6,11 @@ pg_mochochoは、おもに小麦粉からなる生地にあんこをいれて金
 
 ## インストール
 
-構築対象となるPostgreSQLのpg_configプログラムへのPATHを指定してインストールします。
+ソースコード入手後、構築対象となるPostgreSQLのpg_configプログラムへのPATHを指定してインストールします。pg_configはpostgresql-develパッケージに含まれています。
 
 ```
 git clone https://github.com/kiskk/pg_mochocho.git
+cd pg_mochocho
 make USE_PGXS=1 PG_CONFIG=<PATH>/pg_config install
 ```
 
