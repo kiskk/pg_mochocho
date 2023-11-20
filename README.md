@@ -69,3 +69,7 @@ ALTER TYPE
 ```
 postgres=# \dT+ mochocho
 ```
+
+## 注意点
+
+本拡張機能は、PostgreSQL拡張機能の作成手順学習を目的としたジョーク拡張機能です。
