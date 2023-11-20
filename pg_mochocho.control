@@ -1,0 +1,4 @@
+# pg_mochocho extension
+comment = 'Handle the name of Japanese confectionery made by baking a dough consisting mainly of wheat flour with anko (sweet bean paste) in a metal baking mold'
+default_version = '1.0'
+relocatable = true
