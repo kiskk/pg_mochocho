@@ -32,6 +32,11 @@ postgres=# SELECT get_random_mochocho();
  get_random_mochocho
 ---------------------
  大判焼き
+
+postgres=# SELECT get_random_mochocho();
+ get_random_mochocho
+---------------------
+ 回転焼き
 ```
 
 ### おもに小麦粉からなる生地にあんこをいれて金属製焼き型で焼成した和菓子の名前を検証する
