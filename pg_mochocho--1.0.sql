@@ -101,9 +101,9 @@ DECLARE
 BEGIN
     SELECT EXISTS (SELECT pg_enum.enumlabel AS name FROM pg_catalog.pg_enum,pg_catalog.pg_type WHERE pg_type.typname = 'mochocho' AND pg_enum.enumtypid = pg_type.oid AND pg_enum.enumlabel = mochocho_name) INTO STRICT result;
     IF result THEN
-      RAISE INFO '% は、おもに小麦粉からなる生地にあんこをいれて金属製焼き型で焼成した和菓子の名称です。', mochocho_name;
+      RAISE INFO '% は、おもに小麦粉からなる生地にあんこをいれて金属製焼き型で焼成した和菓子の名前です。', mochocho_name;
     ELSE
-      RAISE INFO '% は、おもに小麦粉からなる生地にあんこをいれて金属製焼き型で焼成した和菓子の名称ではおそらくありません。', mochocho_name;
+      RAISE INFO '% は、おもに小麦粉からなる生地にあんこをいれて金属製焼き型で焼成した和菓子の名前ではおそらくありません。', mochocho_name;
     END IF;
     RETURN result;
 END;
